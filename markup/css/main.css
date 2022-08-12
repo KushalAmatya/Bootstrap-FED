@@ -54,6 +54,34 @@
   background: #bf3d42 !important;
 }
 
+.border-orange {
+  border-color: #fab702 !important;
+}
+
+.border-blue {
+  border-color: #6d7396 !important;
+}
+
+.border-darkblack {
+  border-color: #252c3a !important;
+}
+
+.border-gray {
+  border-color: #f5f5f5 !important;
+}
+
+.border-gray300 {
+  border-color: #696969 !important;
+}
+
+.border-black {
+  border-color: #333333 !important;
+}
+
+.border-red {
+  border-color: #bf3d42 !important;
+}
+
 .text-hover-orange:hover {
   text-decoration: none !important;
   color: #fab702 !important;
@@ -152,4 +180,21 @@ body {
 
 .carousel-indicators li:hover {
   background-color: transparent;
+}
+
+.banner-part h1 {
+  line-height: 1;
+}
+
+.btn {
+  min-width: 230px;
+}
+
+textarea {
+  resize: none;
+  height: 110px;
+}
+
+.z-index-max {
+  z-index: 999;
 }

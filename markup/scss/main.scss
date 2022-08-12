@@ -85,3 +85,22 @@ body {
     }
   }
 }
+
+.banner-part {
+  h1{
+    line-height: 1;
+  }
+}
+
+.btn {
+  min-width: 230px;
+}
+
+textarea{
+  resize: none;
+  height: 110px;
+}
+
+.z-index-max{
+  z-index: 999;
+}

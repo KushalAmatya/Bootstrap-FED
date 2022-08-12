@@ -86,6 +86,14 @@ $colors: map-merge((
 	}
 }
 
+
+@each $color,
+$value in $colors {
+	.border-#{$color} {
+		border-color: $value  !important;
+	}
+}
+
 @each $color, $value in $colors {
 	.text-hover-#{$color} {
 		&:hover {
@@ -111,7 +119,10 @@ $spacers: map-merge((
 	0_9: 0.9rem,
 	10: 1rem,
 	15: 1.5rem,
-	30: 3rem
+	30: 3rem,
+	40: 4rem,
+	50: 5rem,
+	100: 10rem
 	), $spacers);
 
 $rem-base: 10px;
@@ -152,13 +163,16 @@ $input-box-shadow: inset 0 2px 5px 0 $orange;
 
 
 //border radius
-$btn-border-radius: 25px;
+$btn-border-radius: 2rem;
 
-$btn-padding-y: $input-btn-padding-y  !default;
-$btn-padding-x: $input-btn-padding-x  !default;
-$btn-font-family: $input-btn-font-family  !default;
-$btn-font-size: $input-btn-font-size  !default;
-$btn-line-height: $input-btn-line-height  !default;
+$btn-padding-y: 1.5rem;
+$btn-padding-x: 2.5rem;
+$btn-font-family: $font-family-base;
+$btn-font-size: 1.7rem;
+$btn-line-height: 1;
 
 $btn-font-weight:  $font-weight-normal; 
 $body-bg:                   white;
+
+//boxshadow
+$box-shadow: 0 0 1rem rgba(#020308, .05) !default;
