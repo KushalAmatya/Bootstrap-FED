@@ -58,4 +58,30 @@ body {
 }
 
 .bg-blend{
-  posit
+  position: relative;
+  &:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $red;
+    mix-blend-mode: darken;
+  }
+}
+
+.carousel-indicators{
+  li {
+    @include size (23px);
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid $black;
+    &.active{
+      background-color: transparent;
+    }
+    &:hover{
+      background-color: transparent;
+    }
+  }
+}
